@@ -1,0 +1,296 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER */
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 3vw;
+}
+
+header p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: vw;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-top: 0;
+}
+
+header span{
+  color: #C4C4C4;
+}
+
+.container-header-info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container{
+  padding: 0 10px;
+  margin:auto;
+  position:relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* image styling */
+.image{
+  width: 100vw;
+  height: 23px;
+  margin-bottom: 145px;
+}
+
+img{
+  max-width: 100%;
+  margin: auto;
+}
+
+/* YIELD, PREP TIME, COOK TIME ND TOTAL TIME */
+
+.inner{
+  display: flex;
+  align-items: center;
+}
+/* space between the icon nd text */
+.material-icons-outlined{
+  margin-right: 5px;
+}
+
+.inner > div{
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  color: #BDBDBD;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.inner > div > span + span{
+  font-size: 12px;
+  color:#333333;
+  font-weight: 500;
+
+}
+
+.inner .material-icons-outlined{
+  font-size: 20px;
+  color: #333333;
+}
+
+/* ornge colour for the spoon */
+.inner .yield{
+  color: #F2994A;
+}
+
+#yield{
+  color: #F2994A;
+}
+
+.container-sub-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+/* INGREDIENT SECTION */
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  size: 18px;
+  line-height: 24px;  
+}
+
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: italic;
+  color: #333333;
+}
+
+.ingredient{
+  align-items: flex-start;
+}
+
+.ingredient p{
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.ingredient > span{
+  color: #828282;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+/* INSTRUCTION SECTION */
+.number-div{
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #F2994A;
+  display: flex; 
+  justify-content: center;
+  padding: 0; 
+ 
+}
+
+.number-div span{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container-instruction{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.container-instruction p{
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+footer, a{
+  font-style: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 20px;
+}
+
+.fa-brands{
+  margin-right: 5px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (min-width:375px){
+  .image{
+    margin-bottom: 170px;
+  }
+}
+
+@media (min-width:414px){
+  .image{
+    margin-bottom: 190px;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    max-width: 1000px;
+  }
+
+  .image{
+    margin-bottom: 380px;
+  }
+
+  .container-instruction{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+  }
+
+  .inner > div{
+    font-size: 1.5vw;
+  }
+  
+  .inner > div > span + span{
+    font-size: 2vw;
+    color:#333333;
+    font-weight: 500;
+  
+  }
+  
+  .inner .material-icons-outlined{
+    font-size: 2.5vw;
+  }
+
+  p{
+    font-size: 18px;
+  }
+}
+
+@media(min-width:840px){
+  .image{
+    margin-bottom: 420px;
+  }
+}
+
+@media (min-width:900px){
+  .image{
+    margin-bottom: 500px;
+  }
+
+  .inner > div{
+    font-size: 1vw;
+  }
+  
+  .inner > div > span + span{
+    font-size: 1.5vw;
+    color:#333333;
+    font-weight: 500;
+  
+  }
+
+  .inner .material-icons-outlined{
+    font-size: 2vw;
+  }
+
+  .container-sub-bottom{
+    flex-direction: column;
+  }
+
+  .inner{
+    margin-bottom: 25px;
+  }
+
+  .container.item-yield{
+    box-shadow: 0.5px 0.5px 8px 0px rgb(228, 219, 228);
+    border-radius: 10px;
+    width: 216px;
+    height: 367px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-con{
+    max-width: 1000px;
+    margin: auto;  
+  }
+  .container.container-lg{
+    max-width: 500px;
+    margin-left: 0;
+  }
+
+  .container-sub{
+    margin-bottom: 0;
+  }
+}
